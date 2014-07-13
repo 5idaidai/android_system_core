@@ -28,7 +28,7 @@ __BEGIN_DECLS
 int ion_open();
 int ion_close(int fd);
 int ion_alloc(int fd, size_t len, size_t align, unsigned int heap_mask,
-	      unsigned int flags, struct ion_handle **handle);
+	      unsigned int flags, struct ion_user_handle_t *handle);
 int ion_alloc_fd(int fd, size_t len, size_t align, unsigned int heap_mask,
 		 unsigned int flags, int *handle_fd);
 int ion_sync_fd(int fd, int handle_fd);
